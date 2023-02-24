@@ -1,0 +1,265 @@
+/* Modo Claro */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+body.dark-mode .card-bodyD {
+  height: 100%;
+  background-color: black;
+}
+
+body.dark-mode .card-textD {
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: white;
+}
+body.dark-mode .card{
+  border: none;
+}
+body.dark-mode .container{
+  background: black;
+}
+__________________________________________________________________________________________________
+/*Grid de noticias*/
+.card-body {
+  height: 100%;
+}
+.card-img-max {
+  max-width: 100%;
+  max-height: 100%;
+}
+/*Estilo para a imagem da notícia*/
+.custom-img {
+  width: 80%;
+  height: 150px;
+  /*width: 80%;
+  height: 70%;*/
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  object-fit: cover;/*fazer testes aqui*/
+}
+
+/*Estilo para o título da notícia*/
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+/*Estilo para o texto da notícia*/
+.card-text {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+/*Estilo para o botão "Leia Mais"*/
+.btn-primary {
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+__________________________________________________________________________________________________
+/*Carousel*/
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  /*height: 400px;*/
+  width: 100%;
+  height: 100%;
+}
+
+.news-card {
+  position: relative;
+}
+
+.news-card a {
+  position: absolute
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.news-card a:hover {
+  transform: scale(1.05);
+}
+
+.news-card img {
+  filter: brightness(50%);
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.carousel-item img {
+  /*max-height: 400px;*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+__________________________________________________________________________________________________
+/*Footer*/
+.copyright {
+  display: inline-block;
+  margin-top: 10px;
+
+}
+.rodape{
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  background-color: #0b5394;
+  width: 100%;
+}
+.rodape a{
+  text-decoration: none;
+  color: white;
+
+}
+.rodape a:hover {
+  text-decoration: underline;
+}
+.rodape p{
+  display: inline-block;
+}
+.rodape ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+/* estilos para a barra de navegação superior */
+nav.navbar {
+  height: 50px;
+}
+/*Borda quando expandida*/
+.navbar-expanded {
+  border: 1px solid #ddd;
+}
+/*Borda quando nao esta expandida*/
+.navbar:not(.navbar-expanded) {
+  border: none;
+}
+
+/* estilos para o botão de menu */
+#sidebarCollapse {
+  background-color: #1c5c87;
+  color: #fff;
+  border: none;
+}
+
+#sidebarCollapse:hover {
+  background-color: #1c5c87;
+  color: #fff;
+}
+
+#sidebarCollapse:focus {
+  outline: none;
+}
+
+#sidebarCollapse span {
+  margin-left: 5px;
+}
+
+/* estilos para a barra lateral */
+/*utilizado para centralizar o conteúdo e manter o menu alinhado ao centro da página,*/
+/*talvez remover isto*/
+.wrapper {
+  display: flex;
+}
+/*Barra lateral*/
+#sidebar {
+  position: fixed;
+  height: 100%;
+  width: 0;/*se remover isto ele fica abarecendo '-'*/
+  z-index: 9999;/* valor alto para a barra lateral ficar acima de outros elementos */
+  top: 50px;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+}
+
+/*Barra lateral quando esta ativada*/
+#sidebar.active {
+  width: 100px;
+  border: 3px solid black;
+}
+.sidebar button {
+  display: block;
+  margin: auto;
+}
+.sidebar.minimized {
+  display: none;
+  width: 50px; /* ajuste o valor para o tamanho desejado */
+}
+.sidebar {
+  transition: all 0.3s ease-in-out;
+}
+
+#content {
+  width: 100%;
+  margin-left: 250px;
+  padding: 15px;
+}
+__________________________________________________________________________________________________
+/*media queries*/
+/*Estilo para notícias em telas grandes*/
+@media (min-width: 1920px) {
+  /*Altera a largura da coluna para 50%*/
+  .col {
+    width: 50%;
+  }
+}
+/* Carrossel para telas grandes */
+@media (min-width: 1920px) {
+  .carousel-item img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-item {
+    height: 100%;
+  }
+
+  .carousel {
+    height: 100%;
+  }
+
+  .carousel-item {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+  }
+
+}

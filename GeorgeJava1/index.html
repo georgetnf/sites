@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site do George com JavaScript</title>
+  <!-- Importação do Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="Estilo/estilo.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-light bg-light ">
+    <div class="container-fluid">
+      <button type="button" id="sidebarCollapse" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span>Menu</span>
+      </button>
+      
+      <li class="nav-item list-unstyled">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </li>
+
+    </div>
+  </nav>
+
+  <div class="wrapper"><!--MenuMinimizado-->
+    <nav id="sidebar"><!--Sidebar-->
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <button id="dark-mode-button">Alternar Modo</button>
+    </nav><!--FIMSidebar-->
+    
+    <div id="content">
+      <!-- conteúdo da página aqui -->
+    </div>
+  </div><!--FIMMenuMinimizado-->
+
+
+
+  
+  <div class="container-fluid">
+    
+    <!-- Linha superior com carrossel de imagens -->
+    <div class="row">
+      
+      <!--CaroselSlide-->
+      <div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner"><!--Inner-->
+          
+            <div class="carousel-item active"><!--CarouselItem-->
+              
+              <div class="news-card"><!--News-->
+                
+                <a href="#">
+                  <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
+                  <div class="carousel-caption"><!--Caption-->
+                    <h5>Notícia 1</h5>
+                    <p class="card-text card-textD text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p class="card-text card-textD text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+
+                  </div><!--FIMCaption-->
+                </a>
+
+              </div><!--FIMNews-->
+
+            </div><!--FIMCarouselItem-->
+            
+            <div class="carousel-item"><!--CarouselItem-->
+              
+              <div class="news-card"><!--News-->
+                
+                <a href="#">
+                  <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
+                  <div class="carousel-caption"><!--Caption-->
+                    <h5>Notícia 2</h5>
+                    <p class="card-text card-textD text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p class="card-text card-textD text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                  </div><!--FIMCaption-->
+                </a>
+
+              </div><!--FIMNews-->
+
+            </div><!--FIMCarouselItem-->
+            
+            <div class="carousel-item"><!--CarouselItem-->
+
+              <div class="news-card"><!--News-->
+
+                <a href="#">
+                  <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
+                  <div class="carousel-caption"><!--Caption-->
+                    <h5>Notícia 3</h5>
+                    <p class="card-text card-textD text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p class="card-text card-textD text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                  </div><!--FIMCaption-->
+                </a>
+              </div><!--FIMNews-->
+
+            </div><!--FIMCarouselItem-->
+
+        </div><!--FIMInner-->
+
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div><!--FIMSlide-->
+    
+    </div><!--FIMLinhaSuperior-->
+
+  </div><!--FIMContainterFluid-->
+
+  <!-- Grid de notícias -->
+  <div class="col-lg-8 container mx-auto text-center"><!--Grid-->
+
+    <div class="row justify-content-center"><!--Row-->
+
+      <div class="col"><!--COL-->
+
+        <div class="card-deck flex-column mx-auto"><!--CardDeck-->
+
+          <div class="card mb-4"><!--News-->
+            <div class="row no-gutters">
+              <div class="col-lg-4">
+                <img src="https://via.placeholder.com/500x500" class="img-fluid card-img-max custom-img" alt="Notícia 1">
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body card-bodyD">
+                  <h5 class="card-title">Notícia 1</h5>
+                  <p class="card-text card-textD">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                  <a href="#" class="btn btn-primary">Leia mais</a>
+                </div>
+              </div>
+            </div>
+          </div><!--FIMNews-->
+
+          <div class="card mb-4"><!--News-->
+            <div class="row no-gutters">
+              <div class="col-lg-4">
+                <img src="https://via.placeholder.com/500x500" class="img-fluid card-img-max custom-img" alt="Notícia 1">
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body card-bodyD">
+                  <h5 class="card-title">Notícia 2</h5>
+                  <p class="card-text card-textD">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                  <a href="#" class="btn btn-primary">Leia mais</a>
+                </div>
+              </div>
+            </div>
+          </div><!--FIMNews-->
+
+          <div class="card mb-4"><!--News-->
+            <div class="row no-gutters">
+              <div class="col-lg-4">
+                <img src="https://via.placeholder.com/500x500" class="img-fluid card-img-max custom-img" alt="Notícia 1">
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body card-bodyD">
+                  <h5 class="card-title">Notícia 3</h5>
+                  <p class="card-text card-textD">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                  <a href="#" class="btn btn-primary">Leia mais</a>
+                </div>
+              </div>
+            </div>
+          </div><!--FIMNews-->
+
+        </div><!--FIMCardDeck-->
+
+      </div><!--FIMCOL-->
+
+    </div><!--FIMRow-->
+
+  </div><!--FIMGrid-->
+
+  <!--___________________________________________________________________________-->
+  
+  <footer class="rodape"><!--Footer-->
+    <ul>
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <p class="copyright">
+      &copy; 2023 George Tunes Filho. Todos os direitos reservados.
+    </p>
+  </footer><!--Footer-->
+    
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-8+ZMxJX/No1ZXb0C+6RyU6EDm84rK5J6YQF+fnZq/b3XjBdH+yJStsyNzQLa25N" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+      //fechar menu lateral e abrir no click
+      $('#sidebarCollapse').on('click', function () {
+        //menu lateral sempre ativo
+        $('#sidebar').toggleClass('active');
+
+      });
+        
+    });
+
+  /*funções do dark mode*/
+  function toggleDarkMode() {
+    const body = document.querySelector('body');
+    const cards = document.querySelectorAll('.card');
+    const cardTexts = document.querySelectorAll('.card-text');
+    const cardBodies = document.querySelectorAll('.card-body');
+    const card = document.querySelectorAll('.card');
+    const container = document.querySelectorAll('.container');
+
+
+    body.classList.toggle('dark-mode');
+    cards.forEach(card => card.classList.toggle('dark-mode'));
+    cardTexts.forEach(text => text.classList.toggle('dark-mode'));
+    cardBodies.forEach(body => body.classList.toggle('dark-modeD'));
+    card.forEach(card => card.classList.toggle('card'));
+    container.forEach(container => container.classList.toggle('container'));
+
+  }
+
+  const darkModeButton = document.querySelector('#dark-mode-button');
+  darkModeButton.addEventListener('click', toggleDarkMode);
+
+  </script>
+
+</body>
+</html>
